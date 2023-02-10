@@ -41,7 +41,7 @@ function App() {
   // end search box code
   return (
     <div className="bg-slate-200 h-full">
-      <NavBar countriesArray={countries} />
+      <NavBar countriesArray={countries.current} />
       {countries.current.length ? <SearchBox onChange={changeHandler} /> : ""}
       {FiltredCountries.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-4 gap-3 mx-auto pb-20">
